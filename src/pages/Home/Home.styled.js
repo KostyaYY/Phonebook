@@ -16,8 +16,8 @@ export const Title = styled.h1`
     font-size: 48;
     text-align: center;
     color: #1976d2;
-    animation: beat 1s infinite;
-    transition: all 300ms ease-in-out;
+    animation: beat 2s infinite;
+    transition: all 400ms ease-in-out;
    
 @keyframes beat {
   0%

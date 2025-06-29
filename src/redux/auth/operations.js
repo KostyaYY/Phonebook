@@ -28,6 +28,7 @@ export const register = createAsyncThunk(
       setAuthHeader(res.data.token);
       return res.data;
     } catch (error) {
+      console.log("err", error);
       toast.error("Error! Invalid email or password")
       return thunkAPI.rejectWithValue(error.message);
     }
