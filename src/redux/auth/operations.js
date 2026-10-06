@@ -3,7 +3,8 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import toast from 'react-hot-toast';
 
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
+axios.defaults.baseURL =
+  process.env.REACT_APP_API_URL || 'http://localhost:3000';
 
 // Utility to add JWT
 const setAuthHeader = token => {
